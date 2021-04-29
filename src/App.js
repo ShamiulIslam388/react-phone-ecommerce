@@ -6,7 +6,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //material-icon section
-import HomeIcon from '@material-ui/icons/Home';
 
 //component import section with
 import Navbar from './components/Navbar';

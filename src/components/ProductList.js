@@ -5,7 +5,6 @@ import { ProductContext } from '../contexts/ProductContexts';
 
 function ProductList() {
 	const { products } = useContext(ProductContext);
-	console.log(products);
 	return (
 		<React.Fragment>
 			<div className="py-5">
@@ -13,7 +12,7 @@ function ProductList() {
 					<Title name="our" title="products" />
 					<div className="row">
 						{products.map((product) => (
-							<Product key={product.id} {...product} />
+							<Product key={product.id} product={product} />
 						))}
 					</div>
 				</div>
